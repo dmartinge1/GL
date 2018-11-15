@@ -1,9 +1,24 @@
-//  Copyright (c) 2018 Antoine Tran Tan
-//
+#include "TP_lib.h"
 
-#include "my_header.h"
-
-int main(void)
+void main (void)
 {
-    printf("hello world");
+    unsigned short int points = 0;
+    unsigned short int resultat= 0;
+    do
+    {
+        resultat = LancerDe ();
+         if ( resultat == 2 || resultat == 4 || resultat == 6)
+         {
+             points = points + resultat;
+         }
+         else if ( resultat == 3)
+         {
+             points = points * 2 ;
+         }
+         else
+         {
+         points = points - 2 ;
+         }
+    }
+    while (resultat != 1);
 }
