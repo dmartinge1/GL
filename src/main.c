@@ -12,6 +12,7 @@ int main( )
 	unsigned char a[5] = { 1,5,9,8,11};
 	unsigned char b[5];
 	unsigned char miroir[6] = { 1,2,3};
+	unsigned char output_dist[10];
 	int  i , j , k, l, m;
 	
 	for(i=0; i<10; i=i+1)
@@ -35,15 +36,15 @@ int main( )
 	  else stat[j] = stat[j] ;
 	  }
 		   for(k=1; k<11; k=k+1)
-		   { dist[k]= dist[k] - dist[k-1];}
+		   { output_dist[k]= dist[k] - dist[k-1];}
 		   
-		   for (l=0;l<4; l=l+1)
+		   for (l=0;l<5; l=l+1)
 		   { b[l] = a[4-l];}
 	
 		   
 		   for(m=0;m<3;m=m+1)
 	{
-		miroir[m+3]=miroir[2-m];
+		miroir[m+6/2]=miroir[-m+6/2-1];
 	}
 	
 	
