@@ -1,15 +1,13 @@
 #include "TP_lib_suite.h"
 
-
-short tirerNumero(void);
-
-
 int main(void)
 {
 	int suite_j[6] ={4,10,24,30,44,5};
 	
 	int suite_g[6] ;
 	int score[100];
+	int combi =0;
+	int combiMax
 	
 	unsigned char i, j,nb_gagnant=0,D ;
 	
@@ -24,6 +22,16 @@ int main(void)
 	{   suite_g[j] = tirerNumero();
 		if(suite_j[i] ==suite_g[j])
 		nb_gagnant= nb_gagnant+1;
+	 
+	 
+	 Combi = nb_gagnant;
+	  
+	  if (Combi>CombiMax)
+		  CombiMax=Combi;
+	  
+	  else
+		  CombiMax=CombiMax;
+	 
 	}
 	}
 	score[D] = nb_gagnant;	}
