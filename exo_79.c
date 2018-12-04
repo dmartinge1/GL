@@ -1,17 +1,21 @@
-#include <ansi_c.h>
-int main()
+#include "ansi_c.h"
+
+int main(void)
 {
-	char phrase[100];
-	char nom[100];
-	char prenom[100];
-	char age[100];
-	
-	scanf(phrase);
-	
-	
-	sscanf(phrase,"Je m'appelle %s %u %*s et j'ai %lu %*s ans",prenom, &nom , &age);
-	
-	
-	return 0 ;
-	
+char prenom  [100];
+char age  [100];
+char nom  [100];
+
+printf ("Prenom:");
+scanf("%s",prenom);
+printf ("Nom:");
+scanf("%s",nom);
+printf ("Age :");
+scanf("%s",age);
+
+printf ("Prenom: %s   Nom:%s   Age:%s ans",prenom ,nom ,age );
+getchar();
+
+return 0;
+
 }
