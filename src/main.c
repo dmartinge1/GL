@@ -13,7 +13,7 @@ scanf("%s",nom);
 printf ("Age :");
 scanf("%s",age);
 
-printf ("Prenom: %s   Nom:%s   Age:%s ans",prenom ,nom ,age );
+printf ("Je m'appelle %s   %s et j'ai %s ans",prenom ,nom ,age );
 getchar();
 
 return 0;
